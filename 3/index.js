@@ -2,7 +2,7 @@ var request = require("request");
 var fs = require("fs");
 var http = require("http");
 
-request("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3", function(err, res, body) {  
+request("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5", function(err, res, body) {  
 	var courses = "";
 	var obj = JSON.parse(body);
 	var data = fs.readFileSync("courses.html", "utf8");
